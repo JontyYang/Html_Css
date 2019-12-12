@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        body{
+            background-color: #f9fbc4;
+        }
+
+        .img_list{
+            height: 470px;
+            width: 590px;
+            margin: 50px auto;
+            background-color: #bbffaa;
+            position: relative;
+            border: 1px red solid;
+        }
+
+        .img_list .img_li{
+            position: absolute;
+        }
+
+        .img_list .anchor_list{
+            position: absolute;
+            left: 0px;
+            top: 470px;
+            margin-top: -70px;
+            margin-left: 40px;
+            z-index: 9999;
+        }
+
+        .img_list .anchor_list a{
+            float: left;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 4px;
+            background-color: rgba(255, 255, 255, 0.4);
+            border: 2px solid transparent;
+            background-clip: content-box;
+        }
+
+        .img_list .anchor_list a:hover{
+            background-color: rgba(255, 255, 255, 1);
+            border: 2px rgba(255, 255, 255, 0.4) solid;
+        }
+
+        .anchor_list #qwe{ /* 此处注意选择器优先级*/
+            background-color: white;
+            border: 2px rgba(255, 255, 255, 0.4) solid;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="img_list">
+        <ul class="img_ul">
+            <li class="img_li" id="1">
+                <a href="#">
+                    <img src="../img/05/1.jpg" alt="">
+                </a>
+            </li>
+            <li class="img_li" id="2">
+                <a href="#">
+                    <img src="../img/05/2.jpg" alt="">
+                </a>
+            </li>
+            <li class="img_li" id="3">
+                <a href="#">
+                    <img src="../img/05/3.jpg" alt="">
+                </a>
+            </li>
+            <li class="img_li" id="4">
+                <a href="#">
+                    <img src="../img/05/4.jpg" alt="">
+                </a>
+            </li>
+            <li class="img_li" id="5">
+                <a href="#">
+                    <img src="../img/05/5.jpg" alt="">
+                </a>
+            </li>
+            <li class="img_li" id="6">
+                <a href="#">
+                    <img src="../img/05/6.jpg" alt="">
+                </a>
+            </li><li class="img_li" id="7">
+            <a href="#">
+                <img src="../img/05/7.jpg" alt="">
+            </a>
+            <li class="img_li" id="8">
+                <a href="#">
+                    <img src="../img/05/8.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+        <div class="anchor_list">
+            <a class="active" id="qwe" href="#1"></a>
+            <a href="#2"></a>
+            <a href="#3"></a>
+            <a href="#4"></a>
+            <a href="#5"></a>
+            <a href="#6"></a>
+            <a href="#7"></a>
+            <a href="#8"></a>
+        </div>
+    </div>
+
+</body>
+</html>

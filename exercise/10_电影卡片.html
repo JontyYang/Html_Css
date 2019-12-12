@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <style>
+        /* 设置外层容器 */
+        .outer{
+            width: 240px;
+            margin: 100px auto;
+            /* 设置阴影 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        }
+
+        /* .img-wrapper{
+            border: 1px red solid;
+        } */
+
+        /* 设置图片 */
+        .img-wrapper img{
+            width: 100%;
+            vertical-align: bottom;
+        }
+
+        .info{
+            padding: 0 18px;
+            color: #acaaaa;
+            font-size: 14px;
+        }
+
+        /* 设置标题 */
+        .info .title{
+            color: #717171;
+            font-size: 18px;
+            margin: 13px 0 15px 0;
+        }
+
+
+        .info .category i{
+            margin-left: 4px;
+            margin-right: 7px;
+        }
+
+        /* 设置简介的样式 */
+        .info .intro{
+            margin: 18px 4px;
+            line-height: 20px;
+        }
+
+        /* 设置下边的内容 */
+        .star-wrapper{
+            height: 46px;
+            line-height: 46px;
+            border-top: 1px solid #e9e9e9;
+            color: #ddd;
+            padding: 0 16px;
+        }
+
+        /* 设置星星的样式 */
+        .star-wrapper .star{
+            float: left;
+            
+        }
+
+        .star-wrapper .light{
+            color: #b9cb41;
+        }
+
+        .star-wrapper .weibo{
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 创建一个外层容器 -->
+    <div class="outer">
+        <!-- 创建图片容器 -->
+        <div class="img-wrapper">
+            <!-- 设置图片 -->
+            <img src="./img/10/1.jpg" alt="">
+        </div>
+        <!-- 创建内容区容器 -->
+        <div class="info">
+            <h2 class="title">
+                动画电影
+            </h2>
+            <h3 class="category">
+                <i class="fas fa-map-marker-alt"></i>动画
+            </h3>
+            <p class="intro">
+                这是一部迪士尼的动画电影，非常非常的好看
+            </p>
+        </div>
+        <!-- 创建评分的容器 -->
+        <div class="star-wrapper">
+            <!-- 创建星星 -->
+            <ul class="star">
+               <li class="fas fa-star light"></li>
+               <li class="fas fa-star light"></li>
+               <li class="fas fa-star"></li>
+               <li class="fas fa-star"></li>
+            </ul>
+
+            <!-- 创建 -->
+            <ul class="weibo">
+                <li class="fab fa-weibo"></li>
+            </ul>
+        </div>
+
+    </div>
+    
+</body>
+</html>

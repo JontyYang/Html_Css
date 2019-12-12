@@ -1,0 +1,96 @@
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+body{
+    background-image: url("../img/body-bg.png");
+    background-size: cover;
+    /*display: flex;*/
+    animation: anima 200s infinite linear;
+    text-align: left;
+}
+.login_background{
+    width: 450px;
+    height: 300px;
+    box-shadow: 0px 0px 10px rgba(254, 253, 150, 0.5);
+    position: relative;
+    top: 100px;
+    left: 700px;
+    border-radius: 17px;
+    background-color: #fafbff;
+    opacity: 0.618;
+    /*display: flex;*/
+
+}
+.login_div1{
+    margin-top: 20px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.login_div1 .login_text{
+    font-family: "Microsoft YaHei UI Light";
+    color: black;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.login_div2{
+    width: 350px;
+    height: 230px;
+    margin: 14px auto 6px auto;
+    border-radius: 7px;
+    /*background-color: #bbffaa;*/
+}
+.login_div2 .login_form{
+    width:300px;
+    height:230px;
+    margin: 0px auto;
+    /*background-color: blue;*/
+}
+.login_div2 .login_form .login{
+    border-radius: 15px;
+    text-align: left;
+    height: 45px;
+    line-height: 45px;
+    background-color: rgb(243, 246, 248);
+    border: grey solid 1px;
+}
+.login_div2 .login_form .login:hover{
+    border:1px #2fc9ff solid;
+}
+.login_form .password{
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.login input{
+    padding-left: 10px;
+    border: 0;
+    width: 230px;
+    height: 25px;
+    background-color: transparent;
+}
+.login button{
+    border: 0;
+    width: 230px;
+    height: 25px;
+    background-color: transparent;
+    text-align: center;
+}
+#submit1{
+    background-color: rgb(6, 173, 61);
+    text-align: center;
+}
+button span{
+    color: white;
+    font-size: 20px;
+}
+@keyframes anima {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -1920px 0;
+    }
+}

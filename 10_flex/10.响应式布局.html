@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*
+         使用媒体查询 
+            语法： @media 查询规则{}
+                媒体类型：
+                    all 所有设备
+                    print 打印设备
+                    screen 带屏幕的设备
+                    speech 屏幕阅读器
+                    - 可以使用,连接多个媒体类型，这样它们之间就是一个或的关系
+
+                可以在媒体类型前添加一个only，表示只有。
+                    only的使用主要是为了兼容一些老版本浏览器
+         */
+
+        /* @media print,screen{
+            body{
+                background-color: #bfa;
+            }
+        } */
+
+        @media only screen {
+            body{
+                background-color: #bfa;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        响应式布局
+            - 网页可以根据不通的设备或窗口大小呈现出不同的效果
+            - 使用响应式布局，可以使一个网页适用于所有设备
+            - 响应布局的关键就是 媒体查询
+            - 通过媒体查询，可以为不通的设备，或设备不同状态来分别设置样式
+     -->
+    
+</body>
+</html>

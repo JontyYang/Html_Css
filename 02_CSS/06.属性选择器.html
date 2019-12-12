@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* 
+            [属性名] 选择含有指定属性的元素
+            [属性名=属性值] 选择含有指定属性和属性值的元素
+            [属性名^=属性值] 选择属性值以指定值开头的元素
+            [属性名$=属性值] 选择属性值以指定值结尾的元素
+            [属性名*=属性值] 选择属性值中含有某值的元素的元素
+         */
+        /* p[title]{ */
+        /* p[title=abc]{ */
+        /* p[title^=abc]{ */
+        /* p[title$=abc]{ */
+        p[title*=e]{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+        <p title="abc">少小离家老大回</p>
+        <p title="abcdef">乡音无改鬓毛衰</p>
+        <p title="helloabc">儿童相见不相识</p>
+        <p>笑问客从何处来</p>
+        <p>秋水共长天一色</p>
+        <p>落霞与孤鹜齐飞</p>
+</body>
+</html>

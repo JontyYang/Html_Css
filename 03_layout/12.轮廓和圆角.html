@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+
+            /* box-shadow 用来设置元素的阴影效果，阴影不会影响页面布局 
+                第一个值 水平偏移量 设置阴影的水平位置 正值向右移动 负值向左移动
+                第二个值 垂直偏移量 设置阴影的水平位置 正值向下移动 负值向上移动
+                第三个值 阴影的模糊半径
+                第四个值 阴影的颜色
+            */
+
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, .3) ; 
+
+/* 
+
+            outline 用来设置元素的轮廓线，用法和border一模一样
+                轮廓和边框不同的点，就是轮廓不会影响到可见框的大小    
+ */
+            
+        }
+
+        /* .box1:hover{
+            outline: 10px red solid;
+        } */
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            /* border-radius: 用来设置圆角 圆角设置的圆的半径大小*/
+
+            /* border-top-left-radius:  */
+            /* border-top-right-radius */
+            /* border-bottom-left-radius:  */
+            /* border-bottom-right-radius:  */
+            /* border-top-left-radius:50px 100px; */
+
+            /* 
+                border-radius 可以分别指定四个角的圆角
+                    四个值 左上 右上 右下 左下
+                    三个值 左上 右上/左下 右下 
+                    两个个值 左上/右下 右上/左下  
+              */
+             border-radius: 20px / 40px;    /*设置椭圆*/
+
+            /* 将元素设置为一个圆形 */
+            /*border-radius: 50%;*/
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div class="box1"></div> -->
+
+    <div class="box2"></div>
+</body>
+</html>

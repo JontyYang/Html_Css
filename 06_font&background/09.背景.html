@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+            /* 
+                background-color 设置背景颜色
+             */
+            background-color: #bfa;
+
+            /* 
+                background-image 设置背景图片 
+                    - 可以同时设置背景图片和背景颜色，这样背景颜色将会成为图片的背景色
+                    - 如果背景的图片小于元素，则背景图片会自动在元素中平铺将元素铺满
+                    - 如果背景的图片大于元素，将会一个部分背景无法完全显示
+                    - 如果背景图片和元素一样大，则会直接正常显示
+                    
+            */
+            background-image: url("./img/1.png");
+
+            /* 
+                background-repeat 用来设置背景的重复方式
+                    可选值：
+                        repeat 默认值 ， 背景会沿着x轴 y轴双方向重复
+                        repeat-x 沿着x轴方向重复
+                        repeat-y 沿着y轴方向重复
+                        no-repeat 背景图片不重复
+             */
+            background-repeat: no-repeat;
+
+            /*
+                background-position 用来设置背景图片的位置
+                    设置方式：
+                        通过 top left right bottom center 几个表示方位的词来设置背景图片的位置
+                            使用方位词时必须要同时指定两个值，如果只写一个则第二个默认就是center
+
+                        通过偏移量来指定背景图片的位置：
+                            水平方向的偏移量 垂直方向变量
+            */
+            /* background-position: center; */
+            background-position: -50px 300px;
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

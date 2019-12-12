@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html{
+            /* 设置当前网页的视距为800px，人眼距离网页的距离 */
+            perspective: 8000px;
+        }
+
+        body{
+            border: 1px red solid;
+            background-color: rgb(241, 241, 241);
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin: 200px auto;
+            /* 
+                z轴平移，调整元素在z轴的位置，正常情况就是调整元素和人眼之间的距离，
+                    距离越大，元素离人越近
+                z轴平移属于立体效果（近大远小），默认情况下网页是不支持透视，如果需要看见效果
+                    必须要设置网页的视距
+            */
+
+            transition:2s;
+        }
+
+        body:hover .box1{
+            transform: translateZ(800px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1"></div>
+    
+</body>
+</html>

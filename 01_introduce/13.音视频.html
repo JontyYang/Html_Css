@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+        audio 标签用来向页面中引入一个外部的音频文件的
+            音视频文件引入时，默认情况下不允许用户自己控制播放停止
+
+        属性：
+            controls 是否允许用户控制播放
+            autoplay 音频文件是否自动播放
+                - 如果设置了autoplay 则音乐在打开页面时会自动播放
+                    但是目前来讲大部分浏览器都不会自动对音乐进行播放 
+            loop 音乐是否循环播放  
+     -->
+    <!-- <audio src="./source/audio.mp3" controls autoplay loop></audio> -->
+    
+    <!-- <audio src="./source/audio.mp3" controls></audio> -->
+
+
+    <!-- 除了通过src来指定外部文件的路径以外，还可以通过source来指定文件的路径 -->
+    <audio controls>
+        <!-- 对不起，您的浏览器不支持播放音频！请升级浏览器！ -->
+        <source src="./source/audio.mp3">
+        <source src="./source/audio.ogg">
+        <embed src="./source/audio.mp3" type="audio/mp3" width="300" height="100">
+    </audio>
+    <audio controls>
+        <!-- 对不起，您的浏览器不支持播放音频！请升级浏览器！ -->
+        <source src="./source/audio.mp3">
+        <source src="./source/audio.ogg">
+        <embed src="./source/audio.mp3" type="audio/mp3" width="300" height="100">
+    </audio>
+
+    <!-- 
+        使用video标签来向网页中引入一个视频
+            - 使用方式和audio基本上是一样的
+     -->
+    <video controls>
+        <source src="https://v.qq.com/x/page/a0566a610dm.html">
+    </video>
+
+    <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=b00318l66nt" allowFullScreen="true" width="500" height="300"></iframe>
+    <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=a0566a610dm" allowFullScreen="true"></iframe>
+
+</body>
+</html>

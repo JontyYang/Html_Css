@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .s1{
+            background-color: yellow;
+
+            /* 
+                行内元素的盒模型
+                    - 行内元素不支持设置宽度和高度
+                    - 行内元素可以设置padding，但是垂直方向padding不会影响页面的布局
+                    - 行内元素可以设置border，垂直方向的border不会影响页面的布局
+                    - 行内元素可以设置margin，垂直方向的margin不会影响布局
+             */
+             /* width: 100px;
+             height: 100px; */
+
+             /* padding: 100px; */
+
+             /* border: 100px solid red; */
+
+             margin: 100px;
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+        }
+
+        a{
+            /* 
+                display 用来设置元素显示的类型
+                    可选值：
+                        inline 将元素设置为行内元素
+                        block 将元素设置为块元素
+                        inline-block 将元素设置为行内块元素 
+                                行内块，既可以设置宽度和高度又不会独占一行
+                        table 将元素设置为一个表格
+                        none 元素不在页面中显示
+
+                visibility 用来设置元素的显示状态
+                    可选值：
+                        visible 默认值，元素在页面中正常显示
+                        hidden 元素在页面中隐藏 不显示，但是依然占据页面的位置
+             */
+            display: block;
+
+            visibility: hidden;
+
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="javascript:;">超链接</a>
+    <a href="javascript:;">超链接</a>
+
+
+    <span class="s1">我是span</span>
+    <span class="s1">我是span</span>
+    
+    <div class="box1"></div>
+</body>
+</html>

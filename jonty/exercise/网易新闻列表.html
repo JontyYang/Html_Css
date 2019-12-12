@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        body{
+            background-color: #bbffaa;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .news_list{
+            width: 300px;
+            height: 357px;
+            margin: 50px auto;
+            border-top: solid #dddddd 1px;
+            background-color: #fff6f8;
+            /*overflow: hidden;*/
+        }
+
+        .news_list .news_title{
+            display: inline-block;
+            height: 40px;
+            line-height: 40px;
+            border-top: red solid 1px;
+            margin-top: -1px;
+        }
+
+         .news_title a{
+            font-weight: bold;
+            font-size: 18px;
+            color: #000000;
+        }
+
+         .news_list .news_img{
+             height: 150px;
+         }
+
+        .news_img .img_title{
+            margin-top: -30px;
+            color: #dddddd;
+            size: 20px;
+            font-weight: bold;
+            padding-left: 30px;
+        }
+
+        .news_list .news_ul{
+            margin-top: 20px;
+        }
+
+        .news_list .news_ul li{
+            margin-bottom: 17px;
+            /*padding-left: 15px;*/
+        }
+
+        .news_list .news_ul li a{
+            font-size: 12px;
+            color: #666666;
+        }
+
+        .news_list .news_ul li a:hover{
+            color: red;
+            padding-left:5px;
+        }
+
+        .news_list .news_ul li a::before{
+            content: "·";
+            color: #626661;
+            font-weight: bolder;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="news_list">
+        <h2 class="news_title">
+            <a href="#">体育</a>
+        </h2>
+        <div class="news_img">
+            <a href="#">
+                <img src="../img/03/1.jpeg">
+                <h3 class="img_title">费德勒首负迪米 扶额头不满发挥</h3>
+            </a>
+        </div>
+        <ul class="news_ul">
+            <li>
+                <a href="#">乔治:我爱LA 喜欢和LBJ一起打球</a>
+            </li>
+            <li>
+                <a href="#">格林:3年前降薪就在等KD 特制T恤嘲讽LBJ</a>
+            </li>
+            <li>
+                <a href="#">塔克4000双鞋让保罗羡慕嫉妒 乔丹被震惊</a>
+            </li>
+            <li>
+                <a href="#">CBA下季新赛制:常规赛4组循环 增至46轮</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

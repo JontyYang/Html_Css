@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 60px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+           /* 
+            绝对定位
+                - 当元素的position属性值设置为absolute时，则开启了元素的绝对定位
+                - 绝对定位的特点：
+                    1.开启绝对定位后，如果不设置偏移量元素的位置不会发生变化
+                    2.开启绝对定位后，元素会从文档流中脱离
+                    3.绝对定位会改变元素的性质，行内变成块，块的宽高被内容撑开
+                    4.绝对定位会使元素提升一个层级
+                    5.绝对定位元素是相对于其包含块进行定位的
+
+                    包含块( containing block )
+                        - 正常情况下：
+                            包含块就是离当前元素最近的祖先块元素
+                            <div> <div></div> </div>
+                            <div><span><em>hello</em></span></div>
+
+                        - 绝对定位的包含块:
+                            包含块就是离它最近的开启了定位的祖先元素，
+                                如果所有的祖先元素都没有开启定位则根元素就是它的包含块
+
+                        - html（根元素、初始包含块）
+
+            */
+
+            position: absolute;
+            /* left: 0;
+            top: 0; */
+            bottom: 0;
+            right: 0;
+        }
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+
+        }
+
+        .box4{
+            width: 400px;
+            height: 400px;
+            background-color: tomato;
+            position: relative;
+        }
+        
+        .box5{
+            width: 300px;
+            height: 300px;
+            background-color: aliceblue;
+            /* position: relative; */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">1</div>
+
+    <div class="box4">
+        4
+        <div class="box5">
+            5
+            <div class="box2">2</div>
+        </div>
+    </div>
+    <div class="box3">3</div>
+    
+</body>
+</html>

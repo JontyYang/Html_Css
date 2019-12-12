@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            /* 
+                颜色单位：
+                    在CSS中可以直接使用颜色名来设置各种颜色
+                        比如：red、orange、yellow、blue、green ... ...
+                        但是在css中直接使用颜色名是非常的不方便
+
+                    RGB值：
+                        - RGB通过三种颜色的不同浓度来调配出不同的颜色
+                        - R red，G green ，B blue
+                        - 每一种颜色的范围在 0 - 255 (0% - 100%) 之间
+                        - 语法：RGB(红色,绿色,蓝色)
+
+                    RGBA:
+                        - 就是在rgb的基础上增加了一个a表示不透明度
+                        - 需要四个值，前三个和rgb一样，第四个表示不透明度
+                            1表示完全不透明   0表示完全透明  .5半透明
+
+                    十六进制的RGB值：
+                        - 语法：#红色绿色蓝色
+                        - 颜色浓度通过 00-ff
+                        - 如果颜色两位两位重复可以进行简写  
+                            #aabbcc --> #abc
+                    
+                    HSL值 HSLA值
+                        H 色相(0 - 360)
+                        S 饱和度，颜色的浓度 0% - 100%
+                        L 亮度，颜色的亮度 0% - 100%
+
+             */
+            background-color: red;
+            background-color: rgb(255, 0, 0);
+            background-color: rgb(0, 255, 0);
+            background-color: rgb(0, 0, 255);
+            background-color: rgb(255,255,255);
+            background-color: rgb(106,153,85);
+            background-color: rgba(106,153,85,.5);
+            background-color: #ff0000;
+            background-color: #ffff00;
+            background-color: #ff0;
+            background-color: #bbffaa;
+            background-color: #9CDCFE;
+            background-color: rgb(254, 156, 156);
+            background-color: hsla(98, 48%, 40%, 0.658);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box1"></div>
+
+</body>
+</html>

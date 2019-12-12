@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 256px;
+            height: 256px;
+            margin: 0 auto;
+            background-image: url('./img/12/bg2.png');
+            animation: run 1s steps(6) infinite;
+        }
+
+        /* 创建关键帧 */
+        @keyframes run {
+            from{
+                background-position: 0 0;
+            }
+
+            to{
+                background-position: -1536px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

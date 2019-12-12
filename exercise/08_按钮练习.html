@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a:link{
+            display: block;
+            width: 93px;
+            height: 29px;
+            background-image: url('./img/08/link.png')
+        }
+
+        a:hover{
+            background-image: url('./img/08/hover.png')
+        }
+
+        a:active{
+            background-image: url('./img/08/active.png')
+        }
+
+        /*
+            图片属于网页中的外部资源，外部资源都需要浏览器单独发送请求加载，
+                浏览器加载外部资源时是按需加载的，用则加载，不用则不加载
+                像我们上边的练习link会首先加载，而hover和active会在指定状态触发时才会加载
+
+                
+          */
+
+
+    </style>
+</head>
+<body>
+
+    <a href="javascript:;"></a>
+    
+</body>
+</html>

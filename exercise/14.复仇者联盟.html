@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        html {
+            perspective: 800px
+        }
+
+        .cube {
+            width: 200px;
+            height: 200px;
+            /* background-color: #bfa; */
+            margin: 100px auto;
+            /* 设置3d变形效果 */
+            transform-style: preserve-3d;
+            /* transform: rotateX(45deg) rotateZ(45deg); */
+            animation: rotate 20s infinite linear;
+            /* transform:rotateY(45deg) scaleZ(2); */
+        }
+
+        .cube>div {
+            width: 200px;
+            height: 200px;
+            /* 为元素设置透明效果 */
+            opacity: 0.7;
+            position: absolute;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        .box1 {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        .box2 {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .box3 {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .box4 {
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+
+        .box5 {
+            transform:rotateY(180deg) translateZ(100px);
+        }
+
+        .box6 {
+            transform: rotateY(0deg) translateZ(100px);
+        }
+
+        @keyframes rotate {
+            form{
+                transform:rotateX(0) rotateZ(0)
+            }
+
+            to{
+                transform:rotateX(1turn) rotateZ(1turn)
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 创建一个外部的容器 -->
+    <div class="cube">
+        <!-- 引入图片 -->
+        <div class="box1">
+            <img src="./img/14/1.jpg">
+        </div>
+
+        <div class="box2">
+            <img src="./img/14/2.jpg">
+        </div>
+
+        <div class="box3">
+            <img src="./img/14/3.jpg">
+        </div>
+
+        <div class="box4">
+            <img src="./img/14/4.jpg">
+        </div>
+
+        <div class="box5">
+            <img src="./img/14/5.jpg">
+        </div>
+
+        <div class="box6">
+            <img src="./img/14/6.jpg">
+        </div>
+    </div>
+</body>
+
+</html>

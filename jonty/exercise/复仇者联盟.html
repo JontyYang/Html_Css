@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复仇者联盟</title>
+    <style>
+        html{
+            perspective: 1000px;
+        }
+        .cube{
+            width:200px;
+            height: 200px;
+            /*background-color: #bbffaa;*/
+            margin: 100px auto;
+            transform-style: preserve-3d;
+            /*transform: rotateX(45deg) rotateZ(45deg);*/
+            animation: all 30s infinite linear;
+        }
+        .cube div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            opacity: 0.7;
+        }
+        img{
+            vertical-align: top;    /*消除图片的边框*/
+        }
+        .box1{
+            transform: rotateY(90deg) translateZ(100px);
+
+        }
+        .box2{
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        .box3 {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .box4 {
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        .box5{
+            transform: rotateY(180deg) translateZ(100px);
+        }
+        .box6{
+            transform: translateZ(100px);
+        }
+        @keyframes all {
+            from{
+                transform: rotateX(0deg) rotateZ(0deg);
+            }
+            to{
+                transform: rotateX(360deg) rotateZ(360deg);
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="cube">
+        <div class="box1">
+            <img src="../img/14/1.jpg" alt="黑寡妇">
+        </div>
+        <div class="box2">
+            <img src="../img/14/2.jpg" alt="雷神">
+        </div>
+        <div class="box3">
+            <img src="../img/14/3.jpg" alt="绿巨人">
+        </div>
+        <div class="box4">
+            <img src="../img/14/4.jpg" alt="美国队长">
+        </div>
+        <div class="box5">
+            <img src="../img/14/5.jpg" alt="美女">
+        </div>
+        <div class="box6">
+            <img src="../img/14/6.jpg" alt="全家桶">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+
+            /* 
+                边框
+                    边框的宽度 border-width
+                    边框的颜色 border-color
+                    边框的样式 border-style
+             */
+
+             /* 
+             border-width: 10px; 
+                默认值，一般都是 3个像素
+                border-width可以用来指定四个方向的边框的宽度
+                    值的情况
+                        四个值：上 右 下 左
+                        三个值：上 左右 下
+                        两个值：上下 左右
+                        一个值：上下左右
+                    
+                除了border-width还有一组 border-xxx-width
+                    xxx可以是 top right bottom left
+                    用来单独指定某一个边的宽度
+
+                    
+             */
+             /* border-width: 10px; */
+             /* border-top-width: 10px;
+             border-left-width: 30px; */
+
+            color: red;
+            /*border-bottom: red solid 1px;*/
+
+             /* 
+                border-color用来指定边框的颜色，同样可以分别指定四个边的边框
+                    规则和border-width一样
+
+                border-color也可以省略不写，如果省略了则自动使用color的颜色值
+              */
+             /* border-color: orange red yellow green;
+             border-color: orange; */
+
+
+            /* 
+                border-style 指定边框的样式
+                    solid 表示实线
+                    dotted 点状虚线
+                    dashed 虚线
+                    double 双线
+
+                    border-style的默认值是none 表示没有边框
+
+             */
+             /* border-style: solid dotted dashed double;
+             border-style: solid; */
+
+             /* border-width: 10px;
+             border-color: orange;
+             border-style: solid; */
+
+             /* 
+                border简写属性，通过该属性可以同时设置边框所有的相关样式，并且没有顺序要求
+
+                除了border以外还有四个 border-xxx
+                    border-top
+                    border-right
+                    border-bottom
+                    border-left
+              */
+              /* border: solid 10px orange; */
+              /* border-top: 10px solid red;
+              border-left: 10px solid red;
+              border-bottom: 10px solid red; */
+
+              border: 10px red solid;
+              border-right: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

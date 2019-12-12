@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+
+        在现实生活中，我们经常需要使用表格来表示一些格式化数据：
+            课程表、人名单、成绩单....
+
+        同样在网页中我们也需要使用表格，我们通过table标签来创建一个表格
+
+     -->
+
+    <table border="1" width='50%' align="center">
+        <!-- 在table中使用tr表示表格中的一行，有几个tr就有几行 -->
+        <tr>
+            <!-- 在tr中使用td表示一个单元格，有几个td就有几个单元格 -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+            <!-- rowspan 纵向的合并单元格 -->
+            <td rowspan="2">D2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <!-- 
+                colspan 横向的合并单元格
+             -->
+            <td colspan="2">C4</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

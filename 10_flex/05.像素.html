@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1"></div>
+
+
+    <!-- 
+        像素：
+            - 屏幕是由一个一个发光的小点构成，这一个个的小点就是像素
+            - 分辨率：1920 x 1080 说的就是屏幕中小点的数量
+            - 在前端开发中像素要分成两种情况讨论：CSS像素 和 物理像素
+            - 物理像素，上述所说的小点点就属于物理像素
+            - CSS像素，编写网页时，我们所用像素都是CSS像素
+                - 浏览器在显示网页时，需要将CSS像素转换为物理像素然后再呈现
+                - 一个css像素最终由几个物理像素显示，由浏览器决定：
+                    默认情况下在pc端，一个css像素 = 一个物理像素
+
+        视口（viewport）
+            - 视口就是屏幕中用来显示网页的区域
+            - 可以通过查看视口的大小，来观察CSS像素和物理像素的比值
+            - 默认情况下：
+                视口宽度 1920px（CSS像素）
+                        1920px（物理像素）
+                        - 此时，css像素和物理像素的比是 1:1
+
+            - 放大两倍的情况：
+                视口宽度 960px（CSS像素）
+                        1920px（物理像素）
+                        - 此时，css像素和物理像素的比是1:2
+
+            - 我们可以通过改变视口的大小，来改变CSS像素和物理像素的比值
+
+
+
+     -->
+    
+</body>
+</html>
