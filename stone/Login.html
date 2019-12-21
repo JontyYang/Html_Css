@@ -8,6 +8,21 @@
     <title>登陆界面</title>
 <!--    <link rel="stylesheet" href="./css/reset.css">-->
     <link rel="stylesheet" href="./css/login.css">
+    <script type="text/javascript">
+        window.onload = function () {
+            var btn = document.getElementById("sub_btn");
+            btn.onclick = function () {
+                var account_input = document.getElementById("account");
+                var password_input = document.getElementById("password");
+                var account = account_input.value;
+                var password = password_input.value;
+
+                if(account == 'jonty' && password == '123' ){
+                    document.write(account + password);
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="login_background clearfix">
@@ -17,13 +32,13 @@
        <div class="login_div2 clearfix">
            <form action="" class="login_form">
                <div class="login account">
-                   <input type="text" name="user_name" placeholder="请输入账号" autocomplete="on">
+                   <input type="text" id="account" name="user_name" placeholder="请输入账号" autocomplete="on">
                </div>
                <div class="login password">
-                   <input type="password" name="password" placeholder="请输入密码">
+                   <input type="password" id="password" name="password" placeholder="请输入密码">
                </div>
                <div class="login submit" id="submit1">
-                   <button type="submit">
+                   <button type="submit" id="sub_btn">
                        <span class="spanbutton">登录</span>
                    </button>
                </div>

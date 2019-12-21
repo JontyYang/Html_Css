@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>病人添加界面</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <script>
+        window.onload = function () {
+            var btn = document.getElementById("submit1");
+            btn.onclick = function () {
+               alert("添加成功");
+            }
+        }
+    </script>
+    <style>
+        ul{
+            /*margin-top: 100px;*/
+            background-color: #E3E4E5;
+        }
+        input{
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+       <form class="addpatient">
+           <li class="add"><input type="text" placeholder="请输入姓名"></li>
+           <li class="add"><input type="text" placeholder="请输入性别"></li>
+           <li class="add"><input type="text" placeholder="请输入年龄"></li>
+           <li class="add"><input type="text" placeholder="请输入民族"></li>
+           <li class="add"><input type="text" placeholder="请输入住院日期"></li>
+           <li class="add"><input type="text" placeholder="请输入出院日期"></li>
+           <li class="add"><input type="text" placeholder="请输入病史"></li>
+           <li class="add"><input type="text" placeholder="请输入诊断情况"></li>
+           <li class="add"><input type="text" placeholder="请输入结石大小"></li>
+           <li class="add"><input type="text" placeholder="请输入激光强度"></li>
+           <li class="add"><input type="file" placeholder="请上传图片"></li>
+           <li class="add"><button type="reset">重置</button>
+               <button type="submit" id="submit1">提交</button>
+           </li>
+       </form>
+    </ul>
+</body>
+</html>

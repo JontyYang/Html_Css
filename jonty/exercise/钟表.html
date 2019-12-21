@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>钟表</title>
+<!--    <link rel="stylesheet" href="../css/reset.css">-->
+    <style>
+        .clock{
+            width: 400px;
+            height: 400px;
+            /*background-color: #bbffaa;*/
+            margin: 0px auto;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 3px solid black;
+            position: relative;
+            background-image: url("../img/13/bg3.jpg");
+            background-size: cover;
+        }
+        .clock > div{
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .hour-wrapper{
+            width: 50%;
+            height: 50%;
+            /*background-color: #bbffaa;*/
+            animation: hour linear 86400s infinite;
+        }
+        .hour{
+            height: 50%;
+            width: 7px;
+            background-color: black;
+            margin: 0 auto;
+        }
+        .minu-wrapper{
+            width: 65%;
+            height: 65%;
+            animation: sec steps(60) 3600s infinite;
+        }
+        .minu{
+            height: 50%;
+            width: 4px;
+            background-color: black;
+            margin: 0 auto;
+        }
+        .sec-wrapper{
+            width: 90%;
+            height: 90%;
+            animation: sec steps(60) 60s infinite;
+        }
+        .sec{
+            height: 50%;
+            width: 2px;
+            background-color: red;
+            margin: 0 auto;
+        }
+        @keyframes hour {
+            from{
+                transform: rotateZ(0deg);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+        @keyframes sec {
+            from{
+                transform: rotateZ(0deg);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+        @keyframes sec {
+            from{
+                transform: rotateZ(0deg);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        console.log(document)
+        document.write(123)
+        alert('jfkdaljd')
+    </script>
+</head>
+<body>
+    <div class="clock">
+        <div class="sec-wrapper">
+            <div class="sec">
+
+            </div>
+        </div>
+        <div class="hour-wrapper">
+            <div class="hour">
+
+            </div>
+        </div>
+        <div class="minu-wrapper">
+            <div class="minu">
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
